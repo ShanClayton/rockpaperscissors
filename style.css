@@ -1,0 +1,110 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Asap:400,500,700');
+/* universal code that resets margins on all browsers  */
+/* General  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #24272E;
+  font-family: 'Asap', sans-serif;
+}
+
+header {
+  background: #2374AB;
+  padding: 20px;
+}
+
+header > h1 {
+  color: #25272E;
+  text-align: center;
+}
+
+/* scoreboard  */
+.scoreboard {
+  margin: 20px auto;
+  border: 3px solid white;
+  border-radius: 4px;
+  text-align: center;
+  padding: 15px 20px;
+  width: 200px;
+  color: white;
+  font-size: 46px;
+  font-family: 'Asap', sans-serif;
+  position: relative;
+}
+
+.badge {
+  background: #7DCFB6;
+  color: white;
+  font-size: 14px;
+  padding: 2px 10px;
+}
+
+#user-label {
+  position: absolute;
+  top: 30px;
+  left: -25px;
+}
+
+#computer-label {
+  position: absolute;
+  top: 30px;
+  right: -30px;
+}
+
+.result {
+  font-size: 40px;
+  color:white;
+}
+
+.result > p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.choices {
+  margin-top: 50px 0;
+  text-align: center;
+}
+
+.choice {
+  border: 4px solid white;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 20px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.choice:hover {
+  cursor: pointer;
+  background: #7DCFB6;
+}
+
+#action-message {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/*  winner, lose, tie glow */
+.redviolet-glow {
+  border: 4px solid #C60F7B;
+  box-shadow: 0 0 10px #6C0944;
+}
+
+.purple-glow {
+  border: 4px solid #4D243D;
+  box-shadow: 0 0 10px #7D5F71;
+}
+
+.grey-glow {
+  border: 4px solid #7E93A1;
+  box-shadow: 0 0 0 10px #586771;
+}
